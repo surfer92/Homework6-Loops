@@ -13,7 +13,7 @@ class MinMaxSumAndAverageOfNNumbers
     {
         Console.Title = "Min, Max, Sum and Average of N Numbers";
         Console.ForegroundColor = ConsoleColor.Magenta;
-        Console.SetWindowSize(80, 10);
+        Console.SetWindowSize(80, 20);
         Console.Write("Enter the number of integers: ");
         int numbers = int.Parse(Console.ReadLine());
         int[] arr = new int[numbers];
@@ -22,7 +22,7 @@ class MinMaxSumAndAverageOfNNumbers
             Console.Write("Enter integer: ");
             arr[i] = int.Parse(Console.ReadLine());
         }
-        int min = arr.Max();
+        int min = arr.Min();
         int max = arr.Max();
         int sum = arr.Sum();
         double avg = arr.Average();
