@@ -14,6 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 class PrintADeckOf52Cards
 {
     static void Main(string[] args)
@@ -21,6 +22,23 @@ class PrintADeckOf52Cards
         Console.Title = "Print a Deck of 52 Cards";
         Console.ForegroundColor = ConsoleColor.Magenta;
         Console.SetWindowSize(80, 20);
+        string[] numbers = new string[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
+        string[] color = new string[] { "clubs", "diamonds", "hearts", "spades" };
+        for (int i = 0; i < 13; i++)
+        {
+            for (int n = 0; n < 4; n++)
+            {
+                if (n == 3)
+                {
+                    Console.Write("{0, 4} of {1}", numbers[i], color[n]);
+                }
+                else
+                {
+                    Console.Write("{0, 4} of {1}, ", numbers[i], color[n]);
+                }
+            }
+            Console.WriteLine();
+        }
     }
 }
 

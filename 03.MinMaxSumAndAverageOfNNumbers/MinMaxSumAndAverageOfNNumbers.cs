@@ -26,7 +26,7 @@ class MinMaxSumAndAverageOfNNumbers
         int max = arr.Max();
         int sum = arr.Sum();
         double avg = arr.Average();
-        Console.WriteLine("\nmin= {0} \nmax= {1} \nsum= {2} \navg= {3}",min ,max ,sum ,avg);
+        Console.WriteLine("\nmin= {0} \nmax= {1} \nsum= {2} \navg= {3}", min, max, sum, Math.Round(avg, 2));
     }
 }
 
